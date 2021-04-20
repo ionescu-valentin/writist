@@ -1,0 +1,506 @@
+/* colors
+body: blue lighten-4
+home nav: blue darken-2 #1873D0
+home login: blue darken-2
+home signup: blue lighten 5
+home card: blue darken-1
+home card tabs: blue darken-4
+home footer: blue darken-3
+browse nav 2: amber darken-4 #FF6F00
+*/
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: rgb(177, 189, 245);
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+a{
+    cursor: pointer;
+}
+
+.materialize-textarea{
+    border-bottom: 1.5px solid rgb(47, 134, 221) !important;
+}
+
+/* slider in the homepage */
+#slider {
+    margin-bottom: 20px;
+}
+
+/* slider text */
+.slider .slides .caption {
+    background: rgba(66, 165, 245, 0.4) !important;
+    border-radius: 2px;
+    width: 50% !important;
+}
+
+.slider .slides li:nth-child(1) .caption{
+    left: 45%;
+    top: 40%;
+}
+
+.slider .slides li:nth-child(2) .caption{
+    left: 5%;
+}
+
+.slider .slides li:nth-child(3) .caption{
+    left: 45%;
+    top: 40%;
+}
+
+.slider .slides li:nth-child(4) .caption{
+    left: 5%;
+}
+
+/* slider active circle */
+.slider .indicators .indicator-item.active {
+    background-color: #1565c0 !important;
+}
+
+/* slider circles shadow */
+.slider .indicators .indicator-item{
+    box-shadow: #a5c5e9 1px 1px;
+}
+
+/* card links border top */
+.card .card-action {
+    border-top: 1px solid #5ca5f8 !important;
+}
+
+/* card links  */
+.card-action a{
+    font-size: 1.2rem !important;
+}
+
+/* card links on hover */
+.card-action a:hover{
+    color: #0c3058 !important;
+}
+
+/* active tabs color */
+.card-tabs .tabs .tab a:focus,
+.card-tabs .tabs .tab a:focus.active,
+.nav-content .tabs .tab a:focus,
+.nav-content .tabs .tab a:focus.active{
+    background-color: rgba(21, 101, 192, 0.3) !important;
+}
+
+/* tabs indicator */
+.card-tabs .tabs .indicator{
+    background-color: white !important;
+}
+
+/* navbar hide transition */
+#browsing-tabs{
+    transition: top .6s;
+    z-index: 10 !important;
+    width: 100%;
+    position: fixed;
+    box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+#browsing-tabs li a{
+    color: white !important;
+}
+
+#page-content{
+    background: #1a2a6c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2196f3, #FFC107, #e91e63);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2196f3, #FFC107, #e91e63); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 3000px;
+    padding-top: 50px;
+}
+
+/* collapsibles title "Top 10 in blabla" */
+.category-description{
+    padding: 2rem !important;
+}
+
+/* collapsible header */
+.collapsible-header{
+    font-size: 1.2rem !important;
+}
+
+
+
+/* by blabla */
+.collapsible-author{
+    font-size: .9rem !important;
+    position: absolute;
+    right: 15%;
+}
+
+/* likes and comments box within collapsibles */
+.reactions-box{
+    display: flex;
+    height: 40px !important;
+    width: 150px !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-around;
+}
+
+/* likes and comments text */
+.collapsible .reactions-box a{
+    cursor: default;
+}
+
+.reactions-box a{
+    display: flex;
+    width: 45px;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-around;
+}
+
+#article-content .reactions-box{
+    width: 100% !important;
+    display: initial;
+}
+
+.reactions-box .left{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+    width: 10rem;
+}
+
+/* challenge section */
+#challenge, #randomSection{
+    margin-top: 8rem;
+}
+
+#randomSection .collection .collection-item{
+    color: #C2185B;
+    font-size: 1.1rem;
+}
+
+#randomSection .collection .collection-item.active{
+    color: white;
+    background-color: #C2185B;
+}
+
+label input[type="checkbox"]:checked{
+    background-color: #C2185B !important;
+}
+
+#randomSection label span{
+    color: white !important;
+    font-size: 1.1rem;
+}
+
+.full-button{
+    width: 100%;
+}
+
+/* wrapper of the bottom navigation */
+#bottom-nav-wrapper{
+    height: 60px !important;
+    z-index: 999;
+    position: fixed;
+    bottom: 0%;
+    width: 100% !important;
+    box-shadow: 0px 2px 0px rgba(66, 66, 65, 0.75);
+}
+
+/* bottom nav */
+.bottom-menu{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+    height: 100% !important;
+    margin: 0 !important;
+    
+}
+
+/* bottom nav items */
+.bottom-menu li{
+    padding: 2rem 0 !important;
+}
+
+/* links in bottom nav items */
+.bottom-menu a{
+    display: flex;
+    flex-direction: column !important;
+    justify-items: center !important;
+    align-items: center !important;
+    line-height: .7rem !important;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bottom-menu li span{
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+}
+
+#bottom-in-write li:nth-child(3) a, 
+#bottom-in-browse li:nth-child(2) a{
+    color: white;
+}
+
+/* login & signup form */
+#login-form, #signup-form {
+    margin: 20px auto !important;
+    width: 90%;
+}
+
+/* login & signup modal */
+#signup-modal, #login-modal{
+    max-height: 90% !important;
+    max-width: 60% !important;
+}
+
+#sidebar-menu .brand-logo{
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* user panel in sidebar*/ 
+.user-view{
+    padding-top: 2rem !important;
+}
+
+.user-view a{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.user-view a:nth-child(1){
+    width: 70px !important;
+}
+
+.user-view a.name{
+    width: 150px !important;
+}
+
+#login-nav-link{
+    margin-left: 1rem !important;
+}
+
+/*  sidebar list links (by category)*/
+#sidebar-menu li a, #sidebar-menu li a i{
+    color: rgb(47, 134, 221) !important;
+}
+
+/* sidebar subcategories titles */
+#sidebar-menu .sidenav-subcategory a, 
+#sidebar-menu .collapsible-header, 
+#sidebar-menu .collapsible-header i{
+    font-size: 1.2em !important;
+    color: rgb(41, 38, 38) !important;
+}
+
+/* 1st browsing panel in sidebar list (challenge)*/
+#sidebar-menu  .side-read-color li:nth-child(1) a, 
+#sidebar-menu  .side-read-color li:nth-child(1) a i{
+    color: rgb(28, 86, 145) !important;
+}
+
+/* 2nd browsing panel in sidebar list (challenge)*/
+#sidebar-menu .side-read-color li:nth-child(2) a, 
+#sidebar-menu .side-read-color li:nth-child(2) a i{
+    color: #FF6F00 !important;
+}
+
+/* 3rd browsing panel in sidebar list (challenge)*/
+#sidebar-menu .side-read-color li:nth-child(3) a, 
+#sidebar-menu .side-read-color li:nth-child(3) a i{
+    color: #B81756 !important;
+}
+
+footer .footer-copyright{
+    background: #1565C0 !important;
+    border-bottom: 1px solid white !important;
+}
+
+.navbar-wrapper h5{
+    padding-left: 15rem !important;
+}
+
+#post-options li a{
+    font-size: 1.2rem;
+}
+
+#post-options li a:hover{
+    background-color: #5ca5f8;
+}
+
+#write-space input[type="text"]{
+    border-bottom: 1px solid white !important;
+}
+
+#write-space label{
+    color: white;
+}
+
+#write-space input:focus+label
+{
+    color: rgb(47, 134, 221);
+}
+
+#write-space input[type="text"]:focus{
+    border-bottom: 1px solid rgb(47, 134, 221) !important;
+}
+
+#editor-holder{
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0 auto !important;
+}
+
+#editorjs{
+    padding: 1.5rem;
+    
+}
+
+#editor-holder{
+    -webkit-box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 7px 0px rgba(99, 98, 98, 0.75);
+}
+
+#save-writing{
+    margin: 1rem 40%;
+    width: 120px !important;
+}
+
+.ce-block__content, .ce-toolbar__content{
+    max-width: 90% !important;
+}
+
+h4.article-title,
+h5.article-title
+{
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+#article-content .divider{
+    margin: 1rem !important;
+}
+
+#article-content .card{
+    padding-bottom: 1rem !important;
+}
+
+.reactions-box .left a:nth-child(1) i{
+    color: #b3b1b1;
+}
+
+.card input.btn{
+    margin-top: 1rem;
+}
+
+#article-content .card form{
+    margin-top: 1rem !important;
+}
+
+/* on screens smaller than 600px =======MOBILE=====*/
+@media only screen and (max-width: 600px) {
+    .slider {
+        height: 280px !important;
+    }
+    .slider .slides {
+        height: 250px !important;
+    }
+    .slider .slides .caption h3 {
+        font-size: 2.28rem !important;
+    }
+    .slider .slides .caption h5 {
+        font-size: 1.15rem !important;
+    }
+    .category-description{
+        font-size: 1.4rem !important;
+    }
+    #signup-modal, #login-modal{
+        max-width: 95% !important;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    #random-generated{
+        margin-top: 2rem;
+    }
+    .see-all-btn{
+        width: 100% !important;
+    }
+    #bottom-nav-wrapper{
+        height: 4rem !important;
+    }
+    footer, #write-content{
+        margin-bottom: 55px !important;
+    }
+    i.medium{
+        font-size: 1.8rem !important;
+    }
+    .collapsible-author{
+        display: none;
+    }
+
+}
+
+/* screens between 600 and 992 =====TABLET======*/
+@media only screen and (min-width: 600px) and (max-width: 992px){
+    #signup-modal, #login-modal{
+        width: 60% !important;
+    }
+    .bottom-login{
+        font-size: 1.6rem !important;
+    }
+    footer, #write-content{
+        margin-bottom: 59px !important;
+    }
+    i.medium{
+        font-size: 2rem !important;
+    }
+}
+
+/* screens below 992 =====TABLET & MOBILE ======= */
+@media only screen and (max-width: 992px){
+
+}
+
+/* screens above 992 ======DESKTOP & LARGE SCREENS ======= */
+@media only screen and (min-width: 992px){
+    #browsing-tabs,
+    nav,
+    #page-content, 
+    #home-content,
+    #write-content,
+    #article-content,
+    footer {
+        padding-left: 300px;
+    }
+    .container{
+        width: 85% !important;
+    }
+    #signup-modal, #login-modal{
+        max-width: 30% !important;
+    }
+    #login-form, #signup-form {
+        width: 80%;
+    }
+    #slider {
+        margin-bottom: 20px;
+        height: 90vh !important;
+    }
+    .slider .slides {
+        height: 85vh !important;
+    }
+    #editor-holder{
+        margin: auto 10%;
+    }
+    #save-writing{
+        margin: 1rem 45%;
+    }
+}
